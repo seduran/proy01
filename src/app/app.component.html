@@ -1,0 +1,42 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<h1>hello world!</h1>
+<p>Mi nombre es {{xnombre}} {{xap | uppercase}} {{xam | lowercase}}, y tengo {{xedad}} años.<br>
+  La suma de 5+3 = {{5+3}} <br>
+  Llamando a la funcion suma :: {{sumar(4,5)}} <br>
+  lista de frutas: {{xfrutas | json}} <!-- Visualizar el arreglo en formato json -->
+</p>
+
+<ul>
+  <li *ngFor="let xdat of xfrutas">{{xdat}}</li>
+</ul>
+<img src="assets/Images/{{ximg}}" height="200px" width="200px" alt=""> <br>
+<a href="{{xbusc}}">Buscador</a> <br>
+
+<img [src]="ximg2" [height]="xaltura" [width]="xancho" alt=""><br>
+<a [href]="xbusc2">Buscador 2</a><br>
+<input type="text" [value]="xval" disabled="true"><br>
+<p [className]="xcolor">Carrera de informática</p>
+
+<button (dblclick)="cambiar(true)">Cambiar</button>
+
+<input type="text" [(ngModel)]="xmensaje">
+<p>{{xmensaje}}</p>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
