@@ -29,12 +29,8 @@ export class AppComponent {
 
   xcolor: string = "rojo"
 
-  cambiar(booleano: boolean){
-    if (booleano==true) {
+  cambiar(){
       this.ximg = "Logo-Android.png"
-    }else{
-      this.ximg = "1200px-Tux.png"
-    }
   }
 
   xmensaje="";
